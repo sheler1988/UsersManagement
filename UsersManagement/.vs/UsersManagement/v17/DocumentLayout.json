@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\MyProjects\\UsersManagement\\UsersManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5E8FC-E1FD-470A-8FE0-92C54E0EA518}|UsersManagement\\UsersManagement.csproj|f:\\myprojects\\usersmanagement\\usersmanagement\\usersmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5E8FC-E1FD-470A-8FE0-92C54E0EA518}|UsersManagement\\UsersManagement.csproj|solutionrelative:usersmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5E8FC-E1FD-470A-8FE0-92C54E0EA518}|UsersManagement\\UsersManagement.csproj|f:\\myprojects\\usersmanagement\\usersmanagement\\usersmanagement\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5E8FC-E1FD-470A-8FE0-92C54E0EA518}|UsersManagement\\UsersManagement.csproj|solutionrelative:usersmanagement\\repositories\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5E8FC-E1FD-470A-8FE0-92C54E0EA518}|UsersManagement\\UsersManagement.csproj|f:\\myprojects\\usersmanagement\\usersmanagement\\usersmanagement\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5E8FC-E1FD-470A-8FE0-92C54E0EA518}|UsersManagement\\UsersManagement.csproj|solutionrelative:usersmanagement\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "F:\\MyProjects\\UsersManagement\\UsersManagement\\UsersManagement\\Constants.cs",
+              "RelativeDocumentMoniker": "UsersManagement\\Constants.cs",
+              "ToolTip": "F:\\MyProjects\\UsersManagement\\UsersManagement\\UsersManagement\\Constants.cs",
+              "RelativeToolTip": "UsersManagement\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T11:58:56.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersRepository.cs",
+              "DocumentMoniker": "F:\\MyProjects\\UsersManagement\\UsersManagement\\UsersManagement\\Repositories\\UsersRepository.cs",
+              "RelativeDocumentMoniker": "UsersManagement\\Repositories\\UsersRepository.cs",
+              "ToolTip": "F:\\MyProjects\\UsersManagement\\UsersManagement\\UsersManagement\\Repositories\\UsersRepository.cs",
+              "RelativeToolTip": "UsersManagement\\Repositories\\UsersRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAtwC4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T11:55:14.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\MyProjects\\UsersManagement\\UsersManagement\\UsersManagement\\Program.cs",
+              "RelativeDocumentMoniker": "UsersManagement\\Program.cs",
+              "ToolTip": "F:\\MyProjects\\UsersManagement\\UsersManagement\\UsersManagement\\Program.cs",
+              "RelativeToolTip": "UsersManagement\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T11:20:33.603Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
