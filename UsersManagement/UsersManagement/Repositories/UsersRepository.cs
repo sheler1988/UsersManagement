@@ -21,10 +21,12 @@ public class UsersRepository
 		try
 		{
 			connection.Open();
-			var command = new SqlCommand("INSERT INTO Users VALUES(@p1, @p2, @p3)", connection);
-			command.Parameters.Add(new SqlParameter("p1", username));
-			command.Parameters.Add(new SqlParameter("p2", password));
-			command.Parameters.Add(new SqlParameter("p3", DateTime.Now));
+			var command = CreateCommand("INSERT INTO Users VALUES(@p1, @p2, @p3)", new Dictionary<string, object>()
+			{
+				["p1"] = username,
+				["p2"] = password,
+				["p3"] = DateTime.Now,
+			});
 			command.ExecuteNonQuery();
 			connection.Close();
 			return true;
@@ -32,14 +34,28 @@ public class UsersRepository
 		catch (Exception ex) {return false; }
 	}
 
+	public bool ExistsUser(string username)
+	{
+		connection.Open();
+		var command = CreateCommand("SELECT COUNT (*) FROM Users where Username = @p1", new Dictionary<string, object>
+		{
+			["p1"] = username
+		});
+		var result = command.ExecuteNonQuery();
+		connection.Close();
+		return result > 1;
+	}
+
 	public bool ValidateUser(string username, string password)
 	{
 		try
 		{
 			connection.Open();
-			var command = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Username = @p1 and Password = @p2");
-			command.Parameters.Add(new SqlParameter("p1", username));
-			command.Parameters.Add(new SqlParameter("p1", password));
+			var command = CreateCommand("SELECT COUNT(*) FROM Users WHERE Username = @p1 and Password = @p2", new Dictionary<string, object>
+			{
+				["p1"] = username,
+				["p2"] = password
+			});
 			var result = (int)command.ExecuteScalar();
 			connection.Close();
 			return result > 0;
@@ -53,10 +69,20 @@ public class UsersRepository
 		{
 			connection.Open();
 			// کوئری که تعداد یوزرهارو برمیکردونه
-			var command = new SqlCommand("SELECT COUNT (*) FROM Users", connection);
+			var command = new SqlCommand("SELECT COUNT (*) FROM Users");
 			var result = (int)command.ExecuteScalar();
 			connection.Close();
 			return result;
 		}
+	}
+
+	private SqlCommand CreateCommand(string commandText, Dictionary<string, object> parameters)
+	{
+		var command = new SqlCommand(commandText, connection);
+		foreach (var parameter in parameters)
+		{
+			command.Parameters.Add(new SqlParameter(parameter.Key, parameter.Value));
+		}
+		return command;
 	}
 }
